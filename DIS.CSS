@@ -1,0 +1,347 @@
+h1 { color: purple;
+    font-family:url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap');
+    text-align: center;   
+}
+
+h1{
+    animation-duration: 2s;
+    animation-name: aparecer;
+}
+     
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+
+
+header{
+    background-color: black;
+    background-repeat:no-repeat;
+    margin-top: 1px;
+    position:sticky;
+   }
+
+
+.display {
+float: left;
+}
+
+
+h2{ color:purple;
+    font-family:url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap');
+text-align: center;}
+
+h3{ color: rgb(109, 63, 201);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-decoration: overline;}
+
+p { color:rgb(224, 64, 230);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+label {
+    color:purple;
+}
+legend{
+    color: purple ;
+    text-align: center;
+}
+
+legend {
+    animation-duration: 3s;
+    animation-name: aparecer;
+}
+     
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ 
+
+select {
+    color: rgb( 131, 95 , 5) ;
+}
+
+
+body {
+    background-color:white ;
+ 
+    }
+
+
+.mainMenu {
+    display: flex;
+}
+.mainMenu{
+    width: 100%;
+    height: 40px;
+    position:sticky;
+    top: 0 px;
+    background-color: black ;
+    text-decoration: none;
+    text-align: center;
+     z-index: 1;
+    }
+.mainMenu a{
+        color: white;
+        text-decoration: none;
+    }
+.mainMenu ul{
+        list-style: none;
+        font-size: 0;
+        background-color: black;
+    }
+
+.lista{
+    list-style: none;
+    font-size: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-color: black ;
+    text-decoration: none;
+     z-index: 1;
+}
+.lista a{
+    color: white;
+     text-decoration: none;
+}
+        /*.mainMenu ul{
+            list-style: none;
+            font-size: 0;
+            background-color: black;
+        }*/
+.lista li{
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    width: 14%;
+    border-right:purple 2px solid;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+        }
+ .lista ul{
+    background-color: black;
+    display: none;
+    position: absolute;
+}
+
+.lista ul  li{
+    display: block;
+}
+
+.lista li:hover ul {
+    display: block;
+    background-color: rgb(49, 46, 49);     
+}
+
+.mainMenu ul li a :hover {
+    background-color: rgb(21, 29, 10);
+}
+
+.tatuators {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    padding: 10px;
+    border: 2px solid black; 
+}
+
+.tatuators div {
+    width: 50px;
+    margin: 10px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    border: 2px solid black ;
+}
+
+.tatuators :hover {
+     filter: black (15%);
+    transform: scale(1.5);
+}
+.tatuators {
+    height: 99px;
+    width: auto;
+    margin-bottom: 10px;
+    filter: black(15%);
+    transition: filter 2s ;
+}
+/*galeria de menu*/
+.inicio {
+    width: 991px;
+    height: 350px;
+}
+
+.nav {
+    justify-content: center;
+    align-items: center;
+}
+.galeria img { 
+    height: 105px;
+    width: 105px;
+}
+.galeria {
+    display: flex;
+    padding: 5px;
+}
+.column {
+    flex:50px ;
+    padding: 5px;
+    content: center;
+}
+.column img {
+    margin-top: 5px;
+    border: transparent;
+}
+
+.column :hover{
+    transform: scale(1.5);
+}
+
+.galeria :hover {
+    transform: scale(1.5);
+}
+.galeria {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+    filter: grayscale (100%);
+    transition: filter 2s ;
+}
+
+.exp {
+    animation-duration: 2s;
+    animation-name: aparecer;
+}
+     
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+
+
+footer {
+    width:20px ;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   }
+.content {
+    max-width:  width 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+
+grid-template-areas:              "header           header           header"
+                                  "main             main             lateral"
+                                  "widget-1         widget-2         lateral"
+                                  "footer           footer           footer"; }
+
+  
+.content div,
+.content .header,
+.content .main,
+.content .sidebar,
+.content .footer {
+  border-radius: 5px; 
+}
+.content .main {
+    grid-area: main;
+    min-height: 400px;
+    min-width: 400px;
+    background-color: black;  
+    }
+  .content .publicidad {
+    grid-area: lateral;
+    background-color:black;  
+      
+    min-height: 400px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+  }
+  
+  .header {
+    grid-area: header;
+    min-width: 400px;
+    min-height: 200px; 
+  }
+  
+  .main .widget-1,
+  .main .widget-2 {
+    min-height: 250px;
+    background-color:black; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+  
+  .content .widget-1 {
+    grid-area: widget-1; 
+  }
+  
+  .content .widget-2 {
+    grid-area: widget-2; 
+  }
+  
+  .content .final {
+    min-width: 993px;
+    min-height: 50px; 
+    background-color:black;     
+    grid-area: footer; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+  }
+  
+.container {
+    align-items: center;
+}
+
+
+  
+  @media screen and (max-width: 992px) {
+    .content {
+              grid-template-areas:             "header         header         header"
+                                               "main           main           main"
+                                               "lateral        lateral        lateral"
+                                               "widget-1       widget-1       widget-2"
+                                               "widget-2       widget-3       widget-3"
+                                               "section1       section1       section2"
+                                               "section2       section3       section3"
+                                               "footer         footer         footer"; } }
+  
+  @media screen and (max-width: 768px) {
+    .content {
+              grid-template-areas:             "header         header         header"
+                                               "main           main           main"
+                                               "lateral        lateral        lateral"
+                                               "widget-1       widget-1       widget-2"
+                                               "widget-2       widget-3       widget-3"
+                                               "section1       section1       section2"
+                                               "section2       section3       section3"
+                                               "footer         footer         footer"; } }
