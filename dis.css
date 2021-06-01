@@ -110,8 +110,7 @@ select {
 
 
 body {
-    background-color: gray;
-    background: url(//pop.png);
+    background-color: white;
 }
 
 
@@ -197,34 +196,7 @@ body {
     background-color: rgb(21, 29, 10);
 }
 
-.tatuators {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    padding: 10px;
-    border: 2px solid black; 
-}
 
-.tatuators div {
-    width: 50px;
-    margin: 10px;
-    text-align: center;
-    line-height: 100px;
-    font-size: 30px;
-    border: 2px solid black ;
-}
-
-.tatuators :hover {
-     filter: black (15%);
-    transform: scale(1.5);
-}
-.tatuators {
-    height: 99px;
-    width: auto;
-    margin-bottom: 10px;
-    filter: black(15%);
-    transition: filter 2s ;
-}
 /*galeria de menu*/
 .inicio {
     width: 991px;
@@ -236,22 +208,33 @@ body {
     align-items: center;
 }
 .galeria img { 
-    height: 105px;
-    width: 105px;
+    height: 6rem;
+    width: 7rem;
 }
+* {
+box-sizing: border-box;
+}
+.responsive {
+padding: 0 6px;
+float: left;
+width: 24.99999%;
+}
+
 .galeria {
-    display: flex;
+    display: flex ;
     padding: 2rem;
-    height: 40rem;
-    width: 30rem;
+    height: 55rem;
+    width: 100%;
+    position: relative;
 }
 .column {
-    flex:50px ;
-    padding: 5px;
+    display: flex ;
+    flex-flow: column;
+    padding: 1rem;
     content: center;
 }
 .column img {
-    margin-top: 5px;
+    margin-top: 5rem;
     border: transparent;
 }
 
@@ -280,7 +263,9 @@ body {
 
 
 .team{
-    padding: 9rem;
+    padding: 2rem;
+    position: relative;
+    width: 100%;
 }
 
 .row {
@@ -397,10 +382,11 @@ grid-template-areas:              "header           header           header"
 .main {
     grid-area: main;
     justify-content: center;
+    position: relative;
     align-items: center;
     margin: 1rem;
-    height: 45rem ;
-    width: 50rem;
+    min-height: 45rem ;
+    min-width: 100%;
     background: white ;
     border-style: outset;
    
@@ -410,7 +396,8 @@ grid-template-areas:              "header           header           header"
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
     color: black;
-    padding-top: 1rem;  
+    padding-top: 1rem;
+    position: relative;  
     text-align: justify left; 
 }
 
@@ -421,20 +408,23 @@ grid-template-areas:              "header           header           header"
 
 .footer {
     grid-area: footer;
-    margin: 3rem;
+    position: relative;
+    bottom: 0;
+    margin: 2rem;
     background: linear-gradient( 90deg, #73e6a3, rgb(56, 56, 56));
     border-style: solid;
-    width: 45rem;
-    height:15rem;
-    align-content: center;
+    min-width: 100%;
+    min-height:15rem;
+    align-content:end;
     text-align: center;
     color:#A36D90 ;
 }
 
 iframe {
     margin: 1rem;
-    min-height: 28rem ;
-    min-width: 40rem ;
+    min-height: 100% ;
+    min-width: 100% ;
+    position: relative;
 
     }
 
@@ -459,3 +449,6 @@ iframe {
                                   "section          section          lateral"
                                   "section          section          section "
                                   "footer           footer           footer"; } }
+
+
+
