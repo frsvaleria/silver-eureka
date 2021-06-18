@@ -1,0 +1,481 @@
+/*body y estilos en las letras*/
+
+
+h1 { color:black ;
+    font-family: 'Frank Ruhl Libre', serif;
+    text-align: center;   
+}
+
+h1{
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-name: aparecer;
+}
+     
+@keyframes  aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+
+title {
+    font-family: 'Frank Ruhl Libre', serif; 
+}
+
+
+.display {
+    float: left;
+}
+
+
+h2{ color: black;
+text-align: center;}
+
+h3{ 
+    color:black ;
+    font-family: 'Trochut', cursiva;
+
+    }
+ h3 {   
+    animation-duration: 1s;
+    animation-name: aparecer;
+}
+
+h4 {
+    color: #A36D9f;
+    font-family: 'Trochut', cursiva;
+}
+legend {
+    color: #A36D90;
+    font-family: 'Trochut', cursiva;
+}
+
+h5{
+    color: #A36D9f;
+}
+h5 {
+    animation-duration: 2s;
+    animation-name: aparecer;
+}
+
+
+ul {
+    color: #B79FAD ;
+}
+.parrafos {
+    text-align: justify;
+    color: white;
+    padding: 50px;
+    margin-top: 20px;
+    background: linear-gradient( 90deg, #A36D9f, #798086);
+    animation-name: aparecer;
+}
+
+p {
+    animation-duration: 2s;
+    animation-name:inherit;
+  }
+  
+
+a {
+    color: #A36d90;
+    transition: background-color.5s;
+}
+   
+
+.descrip {
+    color:#A36D90;
+}
+.links { 
+    color:#798086;
+}
+
+label {
+    color:#A36D90;
+}
+legend{
+    color: white ;
+    text-align: center;
+}
+
+legend {
+    animation-duration: 3s;
+    animation-name: aparecer;
+}
+     
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ 
+body {
+    background-color: white;
+}
+
+
+.carrusel {
+    padding: 8rem;
+    min-width: 30rem;
+    min-width: 30rem;
+}
+
+
+/*bara de menu*/
+
+.mainMenu {
+    display: flex;
+}
+.mainMenu{
+    width: 100%;
+    height: 40px;
+    position:sticky;
+    top: 0 px;
+    background-color: black ;
+    text-decoration: none;
+    text-align: center;
+     z-index: 1;
+    }
+.mainMenu a{
+        color: white;
+        text-decoration: none;
+    }
+.mainMenu ul{
+        list-style: none;
+        font-size: 0;
+        background-color: black;
+    }
+
+.lista{
+    list-style: none;
+    font-size: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-color: black ;
+    text-decoration: none;
+     z-index: 1;
+}
+.lista a{
+    color: white;
+     text-decoration: none;
+}
+        /*.mainMenu ul{
+            list-style: none;
+            font-size: 0;
+            background-color: black;
+        }*/
+.lista li{
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    width: 14%;
+    border-right:purple 2px solid;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+        }
+ .lista ul{
+    background-color: black;
+    display: none;
+    position: absolute;
+}
+
+.lista ul  li{
+    display: block;
+}
+
+.lista li:hover ul {
+    display: block;
+    background-color: rgb(49, 46, 49);     
+}
+
+.mainMenu ul li a :hover {
+    background-color: rgb(21, 29, 10);
+}
+
+
+/*galeria de menu*/
+.inicio {
+    width: 991px;
+    height: 350px;
+}
+
+.nav  {
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria img { 
+    height: 6rem;
+    width: 7rem;
+}
+* {
+box-sizing: border-box;
+}
+.responsive {
+padding: 0 6px;
+float: left;
+width: 24.99999%;
+}
+
+.galeria {
+    display: flex ;
+    flex-wrap: wrap;
+    padding: 2rem;
+    margin: 2rem;
+    height: 90%;
+    width: 90%;
+    position: relative;
+    align-content: center;
+    align-items: center;
+}
+
+.column img {
+    padding: 0.75rem;
+    display: flex ;
+    width: 15rem;
+    height: 10rem;
+    margin-top: 2rem;
+    border: transparent;
+    align-content: space-between;
+}
+a img {
+    width: 25rem;
+    height: 20rem;
+}
+
+.exp {
+    animation-duration: 2s;
+    animation-name: aparecer;
+}
+  
+/*targetas en los html*/
+
+.targetas { 
+    float: left;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+
+}
+
+
+.team{
+    padding: 3rem;
+    position: relative;
+    width: 100%;
+    align-content: center;
+}
+
+.row {
+    align-content: center;
+    flex-direction: left;
+    margin: 1rem;
+    padding: 3rem;
+
+}
+.card-text {
+    color: #b79fad;
+
+}
+
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+ }
+
+
+ /*carrusel en los html*/
+
+.carrusel {
+    position: relative;
+    width: 90%;
+    height: 90%;
+}
+
+
+/*areas en los html*/
+
+.content {
+    max-width:100%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+
+grid-template-areas:              "section           section           section"
+                                  "main             main             main"
+                                  "section-1        section-1        section-1"
+                                  "section-2        section-2        section-2 "
+                                  "footer           footer           footer"; }
+
+  
+.content div,
+.content .section,
+.content .main,
+.content .footer {
+  border-radius: 5px; 
+}
+.content .main {
+    padding: 8rem;
+    grid-area: main;
+    min-height: 80rem;
+    min-width: 80rem;
+    background-color: #A36D9f;  
+    }
+  
+  .section {
+      align-content: center;
+    padding: 0mm;
+    height:120rem;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    margin-top: 1px;
+    position:absolute;
+       }
+
+
+
+  .content .final {
+    min-width: 993px;
+    min-height: 50px; 
+    background-color:black;     
+    grid-area: footer; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;     
+  }
+  
+.container {
+    align-content: center;
+}
+
+.padre {
+    height:400px;
+    margin:25px auto;
+    width: 850px;
+}
+.padre p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: white;
+    padding-top: 70px;  
+    text-align: justify left; 
+}
+ .padre p::first-letter {
+      font-size: 30px;
+  }
+
+  /*areas grid*/
+
+.main {
+    grid-area: main;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin:0;
+    min-height: 13rem ;
+    min-width: 100%;
+    background: #B79FAD ;
+    border-style: outset;
+   
+}
+
+.main p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    color: white;
+    padding-top: 1rem;
+    position: relative;  
+    text-align: justify left; 
+}
+ .main h1 {
+     color: white;
+ }
+.padre p::first-letter {
+      font-size: 30px;
+  }
+
+
+.footer {
+    grid-area: footer;
+    position: relative;
+    bottom: 0;
+    margin: 2rem;
+    background: linear-gradient( 90deg, #798086, #B79FAD);
+    min-width: 25%;
+    min-height:15rem;
+    align-content:end;
+    text-align: center;
+}
+
+.location {
+    padding: 2rem;
+    align-items: center;
+    border-style: ridge;
+    color: black;
+}
+
+a:hover {
+    background-color: #A36D90;
+}
+
+
+.colm :hover {
+    transform: rotate(10deg) scale(0.85) translate(3px,4px);
+}
+
+ .col :hover  {
+     background-color: #798086;
+    transform: scale(1);
+ }
+
+ .map {
+     position: relative;
+     margin: 2rem;
+     align-items: center;
+     width: 90%;
+     height: 35rem;
+     border-color: #b79fad;
+ }
+
+ .col-sm-6 :hover{
+    transform: scale(1);
+ }
+
+
+ 
+@media screen and (max-width: 992px) {
+    .content {
+              grid-template-areas:             
+                                    "main             main             lateral"
+                                    "section          section          lateral"
+                                    "section          section          section "
+                                    "footer           footer           footer"; } }
+@media screen and (max-width: 768px) {
+.content {
+           grid-template-areas:      
+                                  "main             main             lateral"
+                                  "section          section          lateral"
+                                  "section          section          section "
+                                  "footer           footer           footer"; } }
+
+
+
